@@ -39,6 +39,7 @@ struct Chat: View {
       .modifier(KeyboardAdaptive())
       .navigationBarTitle(Text("Chat"), displayMode: .inline)
     }
+    .navigationViewStyle(StackNavigationViewStyle())
   }
   
   func sendMessage() {
