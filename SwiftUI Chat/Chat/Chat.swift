@@ -1,22 +1,27 @@
 import SwiftUI
 
 struct Chat: View {
-  @State var composedMessage: String = ""
   @EnvironmentObject var chatController: ChatController
+  @State var composedMessage: String = ""
 
   var body: some View {
-    VStack {
-      List {
-        ForEach(chatController.messages, id: \.self) { msg in
-          ChatRow(chatMessage: msg)
+    NavigationView {
+      VStack {
+        List {
+          ForEach(chatController.messages, id: \.self) { msg in
+            ChatRow(chatMessage: msg)
+          }
         }
+        HStack {
+          TextField("Message...", text: $composedMessage).frame(minHeight: CGFloat(30))
+          Button(action: sendMessage) {
+            Text("Send")
+          }
+        }.frame(minHeight: CGFloat(50)).padding()
       }
-      HStack {
-        TextField("Message...", text: $composedMessage).frame(minHeight: CGFloat(30))
-        Button(action: sendMessage) {
-          Text("Send")
-        }
-      }.frame(minHeight: CGFloat(50)).padding()
+      .padding(.vertical, 20)
+      .modifier(KeyboardAdaptive())
+      .navigationBarTitle(Text("Chat"), displayMode: .inline)
     }
   }
   

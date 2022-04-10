@@ -19,6 +19,8 @@
 		508DFE172802AF7000BF4218 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE162802AF7000BF4218 /* Chat.swift */; };
 		508DFE192802B09900BF4218 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE182802B09900BF4218 /* ChatRow.swift */; };
 		508DFE1B2802B1F300BF4218 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE1A2802B1F300BF4218 /* ChatMessage.swift */; };
+		508DFE1E2802B2E900BF4218 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE1D2802B2E900BF4218 /* KeyboardAdaptive.swift */; };
+		508DFE202802B34300BF4218 /* KeyboardProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE1F2802B34300BF4218 /* KeyboardProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		508DFE162802AF7000BF4218 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		508DFE182802B09900BF4218 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 		508DFE1A2802B1F300BF4218 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		508DFE1D2802B2E900BF4218 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		508DFE1F2802B34300BF4218 /* KeyboardProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,12 +152,22 @@
 		508DFE152802AF4F00BF4218 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				508DFE1C2802B28100BF4218 /* KeyboardAdaptive */,
 				3954C69C22AB51C4009BB210 /* ChatController.swift */,
 				508DFE162802AF7000BF4218 /* Chat.swift */,
 				508DFE182802B09900BF4218 /* ChatRow.swift */,
 				508DFE1A2802B1F300BF4218 /* ChatMessage.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		508DFE1C2802B28100BF4218 /* KeyboardAdaptive */ = {
+			isa = PBXGroup;
+			children = (
+				508DFE1D2802B2E900BF4218 /* KeyboardAdaptive.swift */,
+				508DFE1F2802B34300BF4218 /* KeyboardProperties.swift */,
+			);
+			path = KeyboardAdaptive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,12 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508DFE1E2802B2E900BF4218 /* KeyboardAdaptive.swift in Sources */,
 				508DFE1B2802B1F300BF4218 /* ChatMessage.swift in Sources */,
 				3954C66D22AB3D10009BB210 /* AppDelegate.swift in Sources */,
 				3954C66F22AB3D10009BB210 /* SceneDelegate.swift in Sources */,
 				3954C67122AB3D10009BB210 /* ContentView.swift in Sources */,
 				508DFE172802AF7000BF4218 /* Chat.swift in Sources */,
 				508DFE192802B09900BF4218 /* ChatRow.swift in Sources */,
+				508DFE202802B34300BF4218 /* KeyboardProperties.swift in Sources */,
 				3954C69D22AB51C4009BB210 /* ChatController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
