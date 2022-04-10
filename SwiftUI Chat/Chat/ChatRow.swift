@@ -5,7 +5,7 @@ struct ChatRow : View {
   var body: some View {
     HStack {
       if !chatMessage.isMe {
-        Text(chatMessage.avatar)
+        avatar
       } else {
         Spacer()
       }
@@ -16,8 +16,16 @@ struct ChatRow : View {
         .background(chatMessage.color)
         .cornerRadius(10)
       if chatMessage.isMe {
-        Text(chatMessage.avatar)
+        avatar
       }
     }
+  }
+
+  private var avatar: some View {
+    Text(chatMessage.avatar)
+      .foregroundColor(.white)
+      .frame(width: 24, height: 24, alignment: .center)
+      .background(Color.gray)
+      .clipShape(Circle())
   }
 }

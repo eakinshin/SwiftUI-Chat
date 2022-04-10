@@ -10,8 +10,12 @@ struct Chat: View {
         List {
           ForEach(chatController.messages, id: \.self) { msg in
             ChatRow(chatMessage: msg)
+              .rotationEffect(.radians(.pi))
+              .scaleEffect(x: -1, y: 1, anchor: .center)
           }
         }
+        .rotationEffect(.radians(.pi))
+        .scaleEffect(x: -1, y: 1, anchor: .center)
         HStack {
           TextField("Message...", text: $composedMessage).frame(minHeight: CGFloat(30))
           Button(action: sendMessage) {
@@ -19,7 +23,7 @@ struct Chat: View {
           }
         }.frame(minHeight: CGFloat(50)).padding()
       }
-      .padding(.vertical, 20)
+      .padding(.vertical, 24)
       .modifier(KeyboardAdaptive())
       .navigationBarTitle(Text("Chat"), displayMode: .inline)
     }
