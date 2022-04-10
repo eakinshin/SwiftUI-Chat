@@ -17,6 +17,8 @@ struct ChatRow : View {
         .cornerRadius(10)
       if chatMessage.isMe {
         avatar
+      } else {
+        Spacer()
       }
     }
   }
