@@ -18,6 +18,7 @@
 		3954C69D22AB51C4009BB210 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3954C69C22AB51C4009BB210 /* ChatController.swift */; };
 		508DFE172802AF7000BF4218 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE162802AF7000BF4218 /* Chat.swift */; };
 		508DFE192802B09900BF4218 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE182802B09900BF4218 /* ChatRow.swift */; };
+		508DFE1B2802B1F300BF4218 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508DFE1A2802B1F300BF4218 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3954C69C22AB51C4009BB210 /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
 		508DFE162802AF7000BF4218 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		508DFE182802B09900BF4218 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		508DFE1A2802B1F300BF4218 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				3954C69C22AB51C4009BB210 /* ChatController.swift */,
 				508DFE162802AF7000BF4218 /* Chat.swift */,
 				508DFE182802B09900BF4218 /* ChatRow.swift */,
+				508DFE1A2802B1F300BF4218 /* ChatMessage.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508DFE1B2802B1F300BF4218 /* ChatMessage.swift in Sources */,
 				3954C66D22AB3D10009BB210 /* AppDelegate.swift in Sources */,
 				3954C66F22AB3D10009BB210 /* SceneDelegate.swift in Sources */,
 				3954C67122AB3D10009BB210 /* ContentView.swift in Sources */,
